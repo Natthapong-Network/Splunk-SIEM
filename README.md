@@ -15,6 +15,8 @@
 
 ### 2. Security & Intrusion Detection (IDS)
 * **Snort :** ติดตั้งเป็น Network IDS (NIDS) ทำหน้าที่วิเคราะห์ Traffic ที่ได้รับผ่าน SPAN Port เพื่อตรวจจับพฤติกรรมที่น่าสงสัย เช่น Port Scanning, Dos เป็นต้น
+**Splunk SIEM (External VM via Cloud2):** * รับข้อมูล Log จาก Snort เพื่อทำ Centralized Logging
+    * ใช้ในการสร้าง Dashboard, ค้นหาเหตุการณ์ (Searching), และการทำ Correlation ของเหตุการณ์ความปลอดภัย
 
 ### 3. Monitoring & Observability Stack
 * **Prometheus:** ทำหน้าที่เป็น Time-series Database เพื่อเก็บรวบรวม Metrics จากอุปกรณ์และ Service ต่างๆ
